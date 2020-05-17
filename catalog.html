@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,21 +11,26 @@
   <body>
     <header>
       <section>
+        <h2>Меню клиента</h2>
         <a href="#">
           <img src="https://via.placeholder.com/220x47" width="220" height="47" alt="Логотип компании Техномарт">
         </a>
-        <a href="#">Поиск</a>
+        <form action="search">
+          <label for="search">Поиск:</label>
+          <input type="search" id="search">
+        </form>
         <a href="#">Закладки</a>
         <a href="#">Корзина</a>
         <a href="#">Оформить заказ</a>
       </section>
 
       <section>
+        <h2>Навигация по сайту</h2>
         <p><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
-        <dl>
-          <dt><a href="#">+7(812)055-05-55</a></dt>
-          <dd>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</dd>
-        </dl>
+        <div>
+          <a href="#">+7(812)055-05-55</a>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
         <div>
           <a href="#">Равшан Джамшутович</a>
           <a href="#">Выйти</a>
@@ -48,32 +53,43 @@
 
     <main>
       <h1>Перфораторы</h1>
-      <div>
-        <a href="catalog.html">Каталог</a>
-        <a href="#">Инструмент</a>
-        <a href="#">Перфораторы</a>
-      </div>
+      <ul>
+        <li><a href="index.html">Главная</a></li><!--Я так понял домик это означает-->
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><a href="#">Перфораторы</a></li>
+      </ul>
       <section>
-        <h2>Фильтры</h2>
+        <h2>Фильтр:</h2> <!--Повторю формы на всякий случай и верстану их, чтобы было все правильно и красиво-->
         <div>
-          <h3>Проивзводители</h3>
+          <h3>Цена:</h3>
+          <!--Форма градация цены-->
+        </div>
+        <div>
+          <h3>Производители:</h3>
           <!--Здесь будет форма чекбокс по производителям-->
         </div>
         <div>
-          <h3>Питание</h3>
+          <h3>Питание:</h3>
           <!--Здесь будет форма радио по типу питания-->
         </div>
         <a href="#">Показать</a>
       </section>
 
       <section>
-        <h2>Каталог</h2>
+        <h2>Карточки товаров</h2>
+        <p>Сортировка:</p>
+        <a href="#">По цене</a>
+        <a href="#">По типу</a>
+        <a href="#">По функционалу</a>
+        <a href="#">Повышение цены</a>
+        <a href="#">Понижение цены</a>
         <ul>
           <li>
             <article>
               <img src="https://via.placeholder.com/144x128" width="144" height="128" alt="Перфоратор BOSCH 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
-              <p><del>30500 Р.</del></p>
+              <p>30500 Р.</p>
               <p>25500 Р.</p>
             </article>
             <a href="#">Купить</a>
@@ -83,7 +99,7 @@
             <article>
               <img src="https://via.placeholder.com/144x128" width="144" height="128" alt="Перфоратор BOSCH 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
-              <p><del>30500 Р.</del></p>
+              <p>30500 Р.</p>
               <p>25500 Р.</p>
             </article>
             <a href="#">Купить</a>
@@ -93,7 +109,7 @@
             <article>
               <img src="https://via.placeholder.com/144x128" width="144" height="128" alt="Перфоратор BOSCH 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
-              <p><del>30500 Р.</del></p>
+              <p>30500 Р.</p>
               <p>25500 Р.</p>
             </article>
             <a href="#">Купить</a>
@@ -103,7 +119,7 @@
             <article>
               <img src="https://via.placeholder.com/144x128" width="144" height="128" alt="Перфоратор BOSCH 3000">
               <h3>Перфоратор BOSCH BFG 3000</h3>
-              <p><del>22500 Р.</del></p>
+              <p>22500 Р.</p>
               <p>15500 Р.</p>
             </article>
             <a href="#">Купить</a>
@@ -113,7 +129,7 @@
             <article>
               <img src="https://via.placeholder.com/144x128" width="144" height="128" alt="Перфоратор BOSCH 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
-              <p><del>30500 Р.</del></p>
+              <p>30500 Р.</p>
               <p>25500 Р.</p>
             </article>
             <a href="#">Купить</a>
@@ -132,7 +148,7 @@
             <article>
               <img src="https://via.placeholder.com/144x128" width="144" height="128" alt="Перфоратор BOSCH 3000">
               <h3>Перфоратор BOSCH BFG 3000</h3>
-              <p><del>22500 Р.</del></p>
+              <p>22500 Р.</p>
               <p>15500 Р.</p>
             </article>
             <a href="#">Купить</a>
@@ -142,7 +158,7 @@
             <article>
               <img src="https://via.placeholder.com/144x128" width="144" height="128" alt="Перфоратор BOSCH 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
-              <p><del>30500 Р.</del></p>
+              <p>30500 Р.</p>
               <p>25500 Р.</p>
             </article>
             <a href="#">Купить</a>
@@ -158,7 +174,23 @@
             <button>В закладки</button>
           </li>
         </ul>
+
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Следующая</a></li>
+        </ul>
       </section>
+
+       <section>
+         <h2>Пара слов о перфораторах</h2>
+         <p><!--Два пробела в переносе внутри тега? Что-то мне кажется не так немного-->
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</br>
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+         </p>
+       </section>
     </main>
 
     <footer>
@@ -177,6 +209,8 @@
           <li><a href="">Каталог</a></li>
           <li><a href="">Доставка</a></li>
           <li><a href="">Контакты</a></li>
+        </ul>
+        <ul>
           <li><a href="">Материалы</a></li>
           <li><a href="">Техника</a></li>
           <li><a href="">Инструмент</a></li>
@@ -190,20 +224,17 @@
           © 2010–2019 Компания «Техномарт» 
           Все права защищены
         </p>
-          <ul>
-            <li><a href="#">Vkontakte</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-          </ul>
-        <dl>
-          <dt>Обратная связь:</dt>
-          <dd><a href="#">mail@htmlacademy.ru</a></dd>
+        <ul>
+          <li><a href="#">Vkontakte</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+        <p>Обратная связь:</p>
+        <a href="#">mail@htmlacademy.ru</a>
 
-          <dt>Разработано -</dt>
-          <dd><a href="htmlacademy.ru">htmlacademy.ru</a></dd>
-        </dl>
+        <p>Разработано -</p>
+        <a href="htmlacademy.ru">htmlacademy.ru</a>
       </section>
     </footer>
-
   </body>
 </html>
