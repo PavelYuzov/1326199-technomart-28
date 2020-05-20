@@ -60,19 +60,31 @@
         <li><a href="#">Перфораторы</a></li>
       </ul>
       <section>
-        <h2>Фильтр:</h2> <!--Повторю формы на всякий случай и верстану их, чтобы было все правильно и красиво-->
-        <div>
-          <h3>Цена:</h3>
-          <!--Форма градация цены-->
-        </div>
-        <div>
-          <h3>Производители:</h3>
-          <!--Здесь будет форма чекбокс по производителям-->
-        </div>
-        <div>
-          <h3>Питание:</h3>
-          <!--Здесь будет форма радио по типу питания-->
-        </div>
+        <h2>Фильтр:</h2>
+        <form action="#" method="GET">
+          <fieldset>
+            <legend><h3>Цена:</h3></legend>
+            <label>Ползунок градации цены<input type="range" name="range-cash" min="0" max="30000" step="500"></label>
+            <label>Минимальная цена<input type="text" name="min" value="0"></label>
+            <p>-</p>
+            <label>Максимальная цена<input type="text" name="max" value="30000"></label>
+          </fieldset>
+
+          <fieldset>
+            <legend><h3>Производитель:</h3></legend>
+            <label><input type="checkbox" name="Manufactures" checked value="BOSCH">BOSCH</label>
+            <label><input type="checkbox" name="Manufactures" value="Interskol">Интерскол</label>
+            <label><input type="checkbox" name="Manufactures" checked value="Makita">Makita</label>
+            <label><input type="checkbox" name="Manufactures" value="Dewalt">Dewalt</label>
+            <label><input type="checkbox" name="Manufactures" value="Hitachi">Hitachi</label>
+          </fieldset>
+
+          <fieldset>
+            <legend><h3>Питание:</h3></legend>
+            <label><input type="radio" name="energy_supply" checked value="battery">Аккумуляторные</label>
+            <label><input type="radio" name="energy_supply" value="AC_power">Сетевые</label>
+          </fieldset>
+        </form>
         <a href="#">Показать</a>
       </section>
 
@@ -87,7 +99,7 @@
         <ul>
           <li>
             <article>
-              <img src="img/B6000.png" width="144" height="128" alt="Перфоратор BOSCH 6000">
+              <img src="img/B6000.jpg" width="144" height="128" alt="Перфоратор BOSCH 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <p>30500 Р.</p>
               <p>25500 Р.</p>
@@ -99,7 +111,7 @@
           </li>
           <li>
             <article>
-              <img src="img/B6000.png" width="144" height="128" alt="Перфоратор BOSCH 6000">
+              <img src="img/B6000.jpg" width="144" height="128" alt="Перфоратор BOSCH 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <p>30500 Р.</p>
               <p>25500 Р.</p>
@@ -111,7 +123,7 @@
           </li>
           <li>
             <article>
-              <img src="img/B6000.png" width="144" height="128" alt="Перфоратор BOSCH 6000">
+              <img src="img/B6000.jpg" width="144" height="128" alt="Перфоратор BOSCH 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <p>30500 Р.</p>
               <p>25500 Р.</p>
@@ -123,7 +135,7 @@
           </li>
           <li>
             <article>
-              <img src="img/B3000.png" width="144" height="128" alt="Перфоратор BOSCH 3000">
+              <img src="img/B3000.jpg" width="144" height="128" alt="Перфоратор BOSCH 3000">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <p>22500 Р.</p>
               <p>15500 Р.</p>
@@ -135,7 +147,7 @@
           </li>
           <li>
             <article>
-              <img src="img/B6000.png" width="144" height="128" alt="Перфоратор BOSCH 6000">
+              <img src="img/B6000.jpg" width="144" height="128" alt="Перфоратор BOSCH 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <p>30500 Р.</p>
               <p>25500 Р.</p>
@@ -147,7 +159,7 @@
           </li>
           <li>
             <article>
-              <img src="img/B2000.png" width="144" height="128" alt="Перфоратор BOSCH 2000">
+              <img src="img/B2000.jpg" width="144" height="128" alt="Перфоратор BOSCH 2000">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <p>12500 Р.</p>
             </article>
@@ -158,7 +170,7 @@
           </li>
           <li>
             <article>
-              <img src="img/B3000.png" width="144" height="128" alt="Перфоратор BOSCH 3000">
+              <img src="img/B3000.jpg" width="144" height="128" alt="Перфоратор BOSCH 3000">
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <p>22500 Р.</p>
               <p>15500 Р.</p>
@@ -170,7 +182,7 @@
           </li>
           <li>
             <article>
-              <img src="img/B6000.png" width="144" height="128" alt="Перфоратор BOSCH 6000">
+              <img src="img/B6000.jpg" width="144" height="128" alt="Перфоратор BOSCH 6000">
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <p>30500 Р.</p>
               <p>25500 Р.</p>
@@ -182,7 +194,7 @@
           </li>
           <li>
             <article>
-              <img src="img/B2000.png" width="144" height="128" alt="Перфоратор BOSCH 2000">
+              <img src="img/B2000.jpg" width="144" height="128" alt="Перфоратор BOSCH 2000">
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <p>12500 Р.</p>
             </article>
