@@ -5,47 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="техномарт, инструменты, дрели, перфораторы, строительные материалы, ремонт">
     <meta name="description" content="Интернет-магазин строительных материалов и инструментов для ремонта">
-    <title>HTML Academy: Техномарт</title>
+    <title>Каталог | Техномарт - найдется всё!</title>
   </head>
 
   <body>
     <header>
       <section>
-        <h2>Меню клиента</h2>
+        <h2 class="visually-hidden">Меню клиента</h2>
         <a href="index.html">
           <img src="img/logo-head.svg" width="220" height="47" alt="Логотип компании Техномарт">
         </a>
-        <form action="search">
-          <label for="search">Поиск:</label>
-          <input type="search" id="search">
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <label for="search" id="label-search">Поиск:</label>
+          <input type="search" id="search" aria-labelledby="label-search" placeholder="Поиск:" autofocus>
         </form>
-        <a href="#">Закладки</a>
-        <a href="#">Корзина</a>
-        <a href="#">Оформить заказ</a>
+        <a href="#" aria-label="Закладки">Закладки</a>
+        <a href="#" aria-label="Корзина">Корзина</a>
+        <a href="#" aria-label="Оформить заказ">Оформить заказ</a>
       </section>
 
       <section>
-        <h2>Навигация по сайту</h2>
+        <h2 class="visually-hidden">Навигация по сайту</h2>
         <p><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
         <div>
-          <a href="#">+7(812)055-05-55</a>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <a href="tel:+7(812)055-05-55" aria-label="Телефон для связи">+7(812)055-05-55</a>
+          <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </div>
         <div>
-          <a href="#">Равшан Джамшутович</a>
-          <a href="#">Выйти</a>
-          <a href="#">Мои заказы</a>
-          <a href="#">Личный кабинет</a>
+          <a href="#" aria-label="Личный профиль">Равшан Джамшутович</a>
+          <a href="#" aria-label="Выйти">Выйти</a>
+          <a href="#" aria-label="Мои заказы">Мои заказы</a>
+          <a href="#" aria-label="Личный кабинет">Личный кабинет</a>
         </div>
-        <nav>
+        <nav role="menubar">
           <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="katalog.html">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li aria-current="page"><a href="index.html" aria-label="Главная">Главная</a></li>
+            <li><a href="#" aria-label="Компания">Компания</a></li>
+            <li><a href="katalog.html" aria-label="Каталог">Каталог</a></li>
+            <li><a href="#" aria-label="Новости">Новости</a></li>
+            <li><a href="#" aria-label="Спецпредложения">Спецпредложения</a></li>
+            <li><a href="#" aria-label="Доставка">Доставка</a></li>
+            <li><a href="#" aria-label="Контакты">Контакты</a></li>
           </ul>
         </nav>
       </section>
@@ -53,49 +53,52 @@
 
     <main>
       <h1>Перфораторы</h1>
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a href="#">Перфораторы</a></li>
+      <ul role="menubar">
+        <li aria-current="page"><a href="index.html" aria-label="Перейти к главной странице">Главная</a></li>
+        <li><a href="catalog.html" aria-label="Перейти в каталог">Каталог</a></li>
+        <li><a href="#" aria-label="Перейти в раздел с инструментами">Инструмент</a></li>
+        <li><a href="#" aria-label="Раздел с перфоратарами">Перфораторы</a></li>
       </ul>
       <section>
         <h2>Фильтр:</h2>
         <form action="#" method="GET">
           <fieldset>
             <legend><h3>Цена:</h3></legend>
-            <label>Ползунок градации цены<input type="range" name="range-cash" min="0" max="30000" step="500"></label>
-            <label>Минимальная цена<input type="number" name="min" value="0"></label>
+            <p class="visually-hidden">Для работы с фильтром - укажите минимальную и максимальную сумму товара</p>
+            <label>Ползунок градации цены<input type="range" name="range-cash" min="0" max="30000" step="500" aria-label="Ползунок с выбором ценовой категории"></label>
+            <label>Минимальная цена<input type="number" name="min" value="0" aria-label="Поле ввода минимальной цены"></label>
             <p>-</p>
-            <label>Максимальная цена<input type="number" name="max" value="30000"></label>
+            <label>Максимальная цена<input type="number" name="max" value="30000" aria-label="Поле ввода максимальной цены"></label>
           </fieldset>
 
           <fieldset>
             <legend><h3>Производитель:</h3></legend>
-            <label><input type="checkbox" name="Manufactures" checked value="BOSCH">BOSCH</label>
-            <label><input type="checkbox" name="Manufactures" value="Interskol">Интерскол</label>
-            <label><input type="checkbox" name="Manufactures" checked value="Makita">Makita</label>
-            <label><input type="checkbox" name="Manufactures" value="Dewalt">Dewalt</label>
-            <label><input type="checkbox" name="Manufactures" value="Hitachi">Hitachi</label>
+            <p class="visually-hidden">Для работы с фильтром - выберите интерсующую фирму для фильтрации товара</p>
+            <label><input type="checkbox" name="Manufactures" checked value="BOSCH" tabindex="0">BOSCH</label>
+            <label><input type="checkbox" name="Manufactures" value="Interskol" tabindex="0">Интерскол</label>
+            <label><input type="checkbox" name="Manufactures" checked value="Makita" tabindex="0">Makita</label>
+            <label><input type="checkbox" name="Manufactures" value="Dewalt" tabindex="0">Dewalt</label>
+            <label><input type="checkbox" name="Manufactures" value="Hitachi" tabindex="0">Hitachi</label>
           </fieldset>
 
           <fieldset>
             <legend><h3>Питание:</h3></legend>
-            <label><input type="radio" name="energy_supply" checked value="battery">Аккумуляторные</label>
-            <label><input type="radio" name="energy_supply" value="AC_power">Сетевые</label>
+            <p class="visually-hidden">Для работы с фильтром - выберите один из типов питания электроинструмента</p>
+            <label><input type="radio" name="energy_supply" checked value="battery" tabindex="0">Аккумуляторные</label>
+            <label><input type="radio" name="energy_supply" value="ac_power" tabindex="0">Сетевые</label>
           </fieldset>
         </form>
-        <a href="#">Показать</a>
+        <a href="#" aria-label="Показать товар с примененными фильтрами">Показать</a>
       </section>
 
       <section>
-        <h2>Карточки товаров</h2>
+        <h2 class="visually-hidden">Карточки товаров</h2>
         <p>Сортировка:</p>
-        <a href="#">По цене</a>
-        <a href="#">По типу</a>
-        <a href="#">По функционалу</a>
-        <a href="#">Повышение цены</a>
-        <a href="#">Понижение цены</a>
+        <a href="#" aria-label="Группировка товара по цене">По цене</a>
+        <a href="#" aria-label="Группировка товара по типу">По типу</a>
+        <a href="#" aria-label="Группировка товара по функционалу">По функционалу</a>
+        <a href="#" aria-label="Группировка товара на повышение цены">Повышение цены</a>
+        <a href="#" aria-label="Группировка товара на понижении цены">Понижение цены</a>
         <ul>
           <li>
             <article>
@@ -105,8 +108,8 @@
               <p>25500 Р.</p>
             </article>
             <div>
-              <a href="#">Купить</a>
-              <button>В закладки</button>
+              <a href="#" aria-label="Купить перфоратор BOSCH 6000">Купить</a>
+              <button aria-label="Добавить перфоратор BOSCH 6000 в закладки">В закладки</button>
             </div>
           </li>
           <li>
@@ -117,8 +120,8 @@
               <p>25500 Р.</p>
             </article>
             <div>
-              <a href="#">Купить</a>
-              <button>В закладки</button>
+              <a href="#" aria-label="Купить перфоратор BOSCH 6000">Купить</a>
+              <button aria-label="Добавить перфоратор BOSCH 6000 в закладки">В закладки</button>
             </div>
           </li>
           <li>
@@ -129,8 +132,8 @@
               <p>25500 Р.</p>
             </article>
             <div>
-              <a href="#">Купить</a>
-              <button>В закладки</button>
+              <a href="#" aria-label="Купить перфоратор BOSCH 6000">Купить</a>
+              <button aria-label="Добавить перфоратор BOSCH 6000 в закладки">В закладки</button>
             </div>
           </li>
           <li>
@@ -141,8 +144,8 @@
               <p>15500 Р.</p>
             </article>
             <div>
-              <a href="#">Купить</a>
-              <button>В закладки</button>
+              <a href="#" aria-label="Купить перфоратор BOSCH 3000">Купить</a>
+              <button aria-label="Добавить перфоратор BOSCH 3000 в закладки">В закладки</button>
             </div>
           </li>
           <li>
@@ -153,8 +156,8 @@
               <p>25500 Р.</p>
             </article>
             <div>
-              <a href="#">Купить</a>
-              <button>В закладки</button>
+              <a href="#" aria-label="Купить перфоратор BOSCH 6000">Купить</a>
+              <button aria-label="Добавить перфоратор BOSCH 6000 в закладки">В закладки</button>
             </div>
           </li>
           <li>
@@ -164,8 +167,8 @@
               <p>12500 Р.</p>
             </article>
             <div>
-              <a href="#">Купить</a>
-              <button>В закладки</button>
+              <a href="#" aria-label="Купить перфоратор BOSCH 2000">Купить</a>
+              <button aria-label="Добавить перфоратор BOSCH 2000 в закладки">В закладки</button>
             </div>
           </li>
           <li>
@@ -176,8 +179,8 @@
               <p>15500 Р.</p>
             </article>
             <div>
-              <a href="#">Купить</a>
-              <button>В закладки</button>
+              <a href="#" aria-label="Купить перфоратор BOSCH 3000">Купить</a>
+              <button aria-label="Добавить перфоратор BOSCH 3000 в закладки">В закладки</button>
             </div>
           </li>
           <li>
@@ -188,8 +191,8 @@
               <p>25500 Р.</p>
             </article>
             <div>
-              <a href="#">Купить</a>
-              <button>В закладки</button>
+              <a href="#"  aria-label="Купить перфоратор BOSCH 6000">Купить</a>
+              <button aria-label="Добавить перфоратор BOSCH 6000 в закладки">В закладки</button>
             </div>
           </li>
           <li>
@@ -199,17 +202,17 @@
               <p>12500 Р.</p>
             </article>
             <div>
-              <a href="#">Купить</a>
-              <button>В закладки</button>
+              <a href="#"  aria-label="Купить перфоратор BOSCH 2000">Купить</a>
+              <button aria-label="Добавить перфоратор BOSCH 2000 в закладки">В закладки</button>
             </div>
           </li>
         </ul>
 
         <ul>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
+          <li><a href="#" aria-label="Первая страница">1</a></li>
+          <li><a href="#" aria-label="Вторая страница">2</a></li>
+          <li><a href="#" aria-label="Третья страница">3</a></li>
+          <li><a href="#" aria-label="Перейти к следующей странице">Следующая</a></li>
         </ul>
       </section>
 
@@ -225,42 +228,42 @@
 
     <footer>
       <section>
-        <h2>Дополнительная навигация по сайту</h2>
-        <a href="index.html">
+        <h2 class="visually-hidden">Дополнительная навигация по сайту</h2>
+        <a href="index.html" aria-label="Перейти на главную страницу Техномарт" tabindex="0">
           <img src="img/logo-foot.svg" width="220" height="47" alt="Логотип компании Техномарт">
         </a>
-        <p>
+        <address>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 
           +7 (812) 555-05-55
-        </p>
+        </address>
         <ul>
-          <li><a href="">Компания</a></li>
-          <li><a href="">Новости</a></li>
-          <li><a href="">Каталог</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a href="" aria-label="Перейти к информации о компании">Компания</a></li>
+          <li><a href="" aria-label="Перейти к новостям">Новости</a></li>
+          <li><a href="" aria-label="Перейти к каталогу">Каталог</a></li>
+          <li><a href="" aria-label="Перейти к доставке">Доставка</a></li>
+          <li><a href="" aria-label="Перейти к контактам">Контакты</a></li>
         </ul>
         <ul>
-          <li><a href="">Материалы</a></li>
-          <li><a href="">Техника</a></li>
-          <li><a href="">Инструмент</a></li>
-          <li><a href="">Спецпредложения</a></li>
+          <li><a href="" aria-label="Перйети к разделу с материалами">Материалы</a></li>
+          <li><a href="" aria-label="Перйети к разделу с техникой">Техника</a></li>
+          <li><a href="" aria-label="Перйети к разделу с инструментами">Инструмент</a></li>
+          <li><a href="" aria-label="Перйети к спецпредложениям">Спецпредложения</a></li>
         </ul>
       </section>
         
       <section>
-        <h2>Копирайт и обратная связь</h2>
+        <h2 class="visually-hidden">Копирайт и обратная связь</h2>
         <p>
           © 2010–2019 Компания «Техномарт» 
           Все права защищены
         </p>
         <ul>
-          <li><a href="#">Vkontakte</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
+          <li><a href="#" aria-label="Перейти к страничке Техномарта в Вконтакте">Vkontakte</a></li>
+          <li><a href="#" aria-label="Перейти к страничке Техномарта в Facebook">Facebook</a></li>
+          <li><a href="#" aria-label="Перейти к страничке Техномарта в Instagram">Instagram</a></li>
         </ul>
         <p>Обратная связь:</p>
-        <a href="#">mail@htmlacademy.ru</a>
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
 
         <p>Разработано -</p>
         <a href="htmlacademy.ru">htmlacademy.ru</a>
