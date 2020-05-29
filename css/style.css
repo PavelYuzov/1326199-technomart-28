@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Cuprum Regular'),local('Cuprum-Regular'),
+       url('../fonts/cuprum-v11-latin_cyrillic-regular.woff2') format('woff2'),
+       url('../fonts/cuprum-v11-latin_cyrillic-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: local('Cuprum Bold'), local('Cuprum-Bold'),
+       url('../fonts/cuprum-v11-latin_cyrillic-700.woff2') format('woff2'),
+       url('../fonts/cuprum-v11-latin_cyrillic-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Cuprum Italic'), local('Cuprum-Italic'),
+       url('../fonts/cuprum-v11-latin_cyrillic-italic.woff2') format('woff2'),
+       url('../fonts/cuprum-v11-latin_cyrillic-italic.woff') format('woff');
+}
+
+:root {
+  /*Header*/
+  --basic-darkblue: #293449;
+  --basic-white: #ffffff;
+  --basic-red: #EE3643;
+  --basic-blue-text: #32425C;
+  --basic-green: #63A63E;
+  --basic-black: #000000;
+  --basic-white-address: #F3F7F9;
+  --basic-white-footer-nav: #F1F5F7;
+  --footer-gold: #FFD180;
+  --footer-gold-2: #FFDA96;
+}
+
+.page-body {
+  min-width: 960px;
+  background-color: var(--basic-white);
+  font-family: Cuprum, Arial, sans-serif;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.header-user-navigation {
+  background-color: var(--basic-darkblue);
+  color: var(--basic-white);
+}
+
+.header-p-info {
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.header-phone {
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+  font-weight: bold;
+}
+
+.header-address {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-blue-text);
+  font-style: normal;
+}
+
+.header-user-menu a {
+  color: var(--basic-black);
+}
+
+.header-site-navigation {
+  background-color: var(--basic-darkblue);
+  color: var(--basic-white);
+}
+
+.header-ul-navigation {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.header-li-items a,
+.header-user-navigation a {
+  color: var(--basic-white);
+}
+
+.header-order-button {
+  background-color: var(--basic-green);
+}
+
+.footer {
+  background-color: var(--basic-blue-text);
+}
+
+.footer-address-phone {
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  color: var(--basic-white-address);
+}
+
+.footer-copyright {
+  background-color: var(--basic-darkblue);
+}
+
+.footer-site-nav a {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white-footer-nav);
+}
+
+ul.footer-site-nav,
+ul.footer-site-catalog,
+ul.social-network {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.footer-navigation address {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+}
+
+.footer-site-catalog a {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--footer-gold);
+}
+
+.items-catalog:nth-child(2) a {
+  color: var(--footer-gold-2);
+}
+
+.footer-copyright p {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+ 
+.contacts {
+  font-size: 18px;
+  line-height: 18px;
+  color: var(--footer-gold);
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
