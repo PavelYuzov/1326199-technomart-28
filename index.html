@@ -18,11 +18,11 @@
           <img class="header-logo" src="img/logo-head.svg" width="220" height="47" alt="Логотип компании Техномарт">
         </a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-          <label class="search-form__label" for="search" id="label-search">Поиск:</label>
+          <label class="visually-hidden search-form__label" for="search" id="label-search">Поиск:</label>
           <input class="search-form__input" type="search" id="search" aria-labelledby="label-search" placeholder="Поиск:" autofocus>
         </form>
-        <a class="header-bookmarks" href="#" aria-label="Закладки">Закладки</a>
-        <a class="header-basket" href="#" aria-label="Корзина">Корзина</a>
+        <a class="header-bookmarks" href="#" aria-label="Закладки">Закладки: 0</a>
+        <a class="header-basket" href="#" aria-label="Корзина">Корзина: 0</a>
         <a class="header-arrange-button" href="#" aria-label="Оформить заказ">Оформить заказ</a>
       </section>
 
@@ -30,7 +30,7 @@
         <h2 class="visually-hidden">Навигация по сайту</h2>
         <p class="user-contacts-account__lead"><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
         <div class="header-contacts">
-          <a class="header-contacts__phone" href="tel:+7(812)0550555" aria-label="Телефон для связи">+7(812)055-05-55</a>
+          <a class="header-contacts__phone" href="rel:+7(812)5550555" aria-label="Телефон для связи">+7 (812) 555-05-55</a>
           <address class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
         </div>
         <div class="user-menu">
@@ -85,13 +85,14 @@
             <h3 class="promo-perforator__h3">Перфораторы</h3>
             <p class="promo-perforator__caption">Настоящие мужские игрушки</p>
           </div>
-          
+          <!--
           <div class="promo-drill">
              <h3 class="promo-drill__h3">Дрели</h3>
              <p class="promo-drill__caption">Соседям на радость!</p>
           </div>
+          -->
           <img class="widget-promo__img1" src="img/men-perforator.jpg" width="620" height="266" alt="Строитель с перфоратором">
-          <img class="widget-promo__img2" src="img/men-drel.jpg" width="620" height="266" alt="Строитель с дрелью">
+          <!--<img class="widget-promo__img2" src="img/men-drel.jpg" width="620" height="266" alt="Строитель с дрелью">-->
           <button class="widget-promo__slide-previous" type="button" aria-label="Предыдущий слайд">Предыдущий слайд</button>
           <button class="widget-promo__slide-next" type="button" aria-label="Следующий слайд">Следующий слайд</button>
           <a class="widget-promo__link" href="catalog.html" aria-label="Открыть каталог товаров">Открыть каталог</a>
@@ -113,8 +114,8 @@
               <p class="product-info__price">25500 Р.</p>
             </article>
             <div class="product-card-choice">
-              <a class="product-card-choice__link1" href="#" aria-label="Купить перфоратор BOSCH 9000">Купить</a>
-              <button class="product-card-choice__button1" type="button" aria-label="Добавить перфоратор BOSCH 9000 в закладки">В закладки</button>
+              <a class="product-card-choice__link" href="#" aria-label="Купить перфоратор BOSCH 9000">Купить</a>
+              <button class="product-card-choice__button" type="button" aria-label="Добавить перфоратор BOSCH 9000 в закладки">В закладки</button>
             </div>
           </li>
 
@@ -126,8 +127,8 @@
               <p class="product-info__price">15500 Р.</p>
             </article>
             <div class="product-card-choice">
-              <a class="product-card-choice__link2" href="#" aria-label="Купить перфоратор BOSCH 3000">Купить</a>
-              <button class="product-card-choice__button2" type="button" aria-label="Добавить перфоратор BOSCH 3000 в закладки">В закладки</button>
+              <a class="product-card-choice__link" href="#" aria-label="Купить перфоратор BOSCH 3000">Купить</a>
+              <button class="product-card-choice__button" type="button" aria-label="Добавить перфоратор BOSCH 3000 в закладки">В закладки</button>
             </div>
           </li>
 
@@ -138,9 +139,9 @@
               <p class="product-info__old-price">30500 Р.</p>
               <p class="product-info__price">25500 Р.</p>
             </article>
-            <div class="product-card-choice3">
-              <a class="product-card-choice__link3" href="#" aria-label="Купить перфоратор BOSCH 6000">Купить</a>
-              <button class="product-card-choice__button3" type="button" aria-label="Добавить перфоратор BOSCH 6000 в закладки">В закладки</button>
+            <div class="product-card-choice">
+              <a class="product-card-choice__link" href="#" aria-label="Купить перфоратор BOSCH 6000">Купить</a>
+              <button class="product-card-choice__button" type="button" aria-label="Добавить перфоратор BOSCH 6000 в закладки">В закладки</button>
             </div>
           </li>
 
@@ -150,9 +151,9 @@
               <h3 class="product-info__title">Перфоратор BOSCH BFG 2000</h3>
               <p class="product-info__price">12500 Р.</p>
             </article>
-            <div class="product-card-choice4">
-              <a class="product-card-choice__link4" href="#" aria-label="Купить перфоратор BOSCH 2000">Купить</a>
-              <button class="product-card-choice__button4" type="button" aria-label="Добавить перфоратор BOSCH 2000 в закладки">В закладки</button>
+            <div class="product-card-choice">
+              <a class="product-card-choice__link" href="#" aria-label="Купить перфоратор BOSCH 2000">Купить</a>
+              <button class="product-card-choice__button" type="button" aria-label="Добавить перфоратор BOSCH 2000 в закладки">В закладки</button>
             </div>
           </li>
 
@@ -167,37 +168,37 @@
         <ul class="manufacture-section-list">
 
           <li class="manufacture-section-item">
-            <a  class="manufacture-section-item__link1" class="" href="#" aria-label="Каталог товаров марки BOSCH">
+            <a  class="manufacture-section-item__link" class="" href="#" aria-label="Каталог товаров марки BOSCH">
               <img class="manufacturer-img1" src="img/BOSCH.png" width="126" height="37" alt="Логотип компании BOSCH">
             </a>
           </li>
 
           <li class="manufacture-section-item">
-            <a class="manufacture-section-item__link2" href="#" aria-label="Каталог товаров марки Makita">
+            <a class="manufacture-section-item__link" href="#" aria-label="Каталог товаров марки Makita">
               <img class="manufacturer-img2" src="img/Makita.png" width="123" height="40" alt="Логотип компании Makita">
             </a>
           </li>
 
           <li class="manufacture-section-item">
-            <a class="manufacture-section-item__link3" href="#" aria-label="Каталог товаров марки Dewalt">
+            <a class="manufacture-section-item__link" href="#" aria-label="Каталог товаров марки Dewalt">
               <img class="manufacturer-img3" src="img/Dewalt.png" width="146" height="44" alt="Логотип компании Dewalt">
             </a>
           </li>
 
           <li class="manufacture-section-item">
-            <a class="manufacture-section-item__link4" href="#" aria-label="Каталог товаров марки Интерскол">
+            <a class="manufacture-section-item__link" href="#" aria-label="Каталог товаров марки Интерскол">
               <img class="manufacturer-img4" src="img/Interskol.png" width="200" height="88" alt="Логотип компании Интерскол">
             </a>
           </li>
 
           <li class="manufacture-section-item">
-            <a class="manufacture-section-item__link5" href="#" aria-label="Каталог товаров марки Hitachi">
+            <a class="manufacture-section-item__link" href="#" aria-label="Каталог товаров марки Hitachi">
               <img class="manufacturer-img5" src="img/Hitachi.png" width="169" height="31" alt="Логотип компании Hitachi">
             </a>
           </li>
 
           <li class="manufacture-section-item">
-            <a class="manufacture-section-item__link6" href="#" aria-label="Каталог товаров марки LG">
+            <a class="manufacture-section-item__link" href="#" aria-label="Каталог товаров марки LG">
               <img class="manufacturer-img6" src="img/LG.png" width="121" height="73" alt="Логотип компании LG">
             </a>
           </li>
@@ -226,15 +227,15 @@
         <ul class="services-section-list">
 
           <li class="services-section-item">
-            <button class="services-section-item_button1" type="button" aria-label="Доставка">Доставка</button>
+            <button class="services-section-item__button" type="button" aria-label="Доставка">Доставка</button>
           </li>
 
           <li class="services-section-item">
-            <button  class="services-section-item_button2" type="button" aria-label="Гарантия">Гарантия</button>
+            <button  class="services-section-item__button" type="button" aria-label="Гарантия">Гарантия</button>
           </li>
 
           <li class="services-section-item">
-            <button  class="services-section-item_button3" type="button" aria-label="Кредит">Кредит</button>
+            <button  class="services-section-item__button" type="button" aria-label="Кредит">Кредит</button>
           </li>
 
         </ul>
@@ -330,19 +331,22 @@
 
           <li class="social-item">
             <a href="#" aria-label="Перейти к страничке Техномарта в Вконтакте">
-              <img class="cosial-item__vk" src="img/icon-vk.svg" alt="Перейти к страничке Техномарта в Вконтакте">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="25" height="14" viewBox="0 0 128 76"><path d="M125,5.15c.89-3,0-5.15-4.23-5.15h-14a6,6,0,0,0-6.09,4S93.59,21.31,83.5,32.59c-3.26,3.26-4.74,4.3-6.52,4.3-.89,0-2.18-1-2.18-4V5.15c0-3.56-1-5.15-4-5.15h-22a3.37,3.37,0,0,0-3.56,3.22c0,3.37,5,4.15,5.56,13.64V37.48c0,4.52-.82,5.34-2.6,5.34-4.74,0-16.29-17.43-23.13-37.38C23.72,1.57,22.38,0,18.8,0H4.8C.8,0,0,1.88,0,4c0,3.71,4.75,22.1,22.1,46.42C33.67,67,50,76,64.8,76c8.9,0,10-2,10-5.45V58c0-4,.84-4.8,3.66-4.8,2.08,0,5.64,1,13.94,9C101.9,71.74,103.46,76,108.8,76h14c4,0,6-2,4.85-6s-5.8-9.64-11.81-16.4c-3.27-3.86-8.16-8-9.64-10.09-2.08-2.67-1.49-3.86,0-6.23,0,0,17-24,18.83-32.18Z" fill="#fff"/></svg>
             </a>
           </li>
 
           <li class="social-item">
             <a href="#" aria-label="Перейти к страничке Техномарта в Facebook">
-              <img class="cosial-item__fb" src="img/icon-fb.svg" alt="Перейти к страничке Техномарта в Facebook">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg width="12" height="22" viewBox="0 0 10.15 21.74"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z" fill="#fff"/></svg>
             </a>
           </li>
 
           <li class="social-item">
             <a href="#" aria-label="Перейти к страничке Техномарта в Instagram">
-              <img class="cosial-item__insta" src="img/icon-insta.svg" alt="Перейти к страничке Техномарта в Instagram">
+              <span class="visually-hidden">Инстаграм</span>
+            <svg width="21" height="21" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg>
             </a>
           </li>
         </ul>
