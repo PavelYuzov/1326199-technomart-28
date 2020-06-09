@@ -13,31 +13,43 @@
   <body class="page-body">
     
     <header class="header">
+
       <section class="user-navigation">
-        <h2 class="visually-hidden">Меню клиента</h2>
-        <a href="index.html">
-          <img class="header-logo" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип компании Техномарт">
-        </a>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-          <label class="visually-hidden search-form__label" for="search" id="label-search">Поиск:</label>
-          <input class="search-form__input" type="search" id="search" aria-labelledby="label-search" placeholder="Поиск:" autofocus>
-        </form>
-        <a class="header-bookmarks" href="#" aria-label="Закладки">Закладки: 0</a>
-        <a class="header-basket" href="#" aria-label="Корзина">Корзина: 0</a>
-        <a class="header-arrange-button" href="#" aria-label="Оформить заказ">Оформить заказ</a>
+        <div class="container-user-navigation">
+          <h2 class="visually-hidden">Меню клиента</h2>
+          <a href="index.html">
+            <img class="header-logo" src="img/logo-technomart.svg" width="108" height="18" alt="Логотип компании Техномарт">
+          </a>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+            <label class="visually-hidden search-form__label" for="search" id="label-search">Поиск:</label>
+            <input class="search-form__input" type="search" id="search" aria-labelledby="label-search" placeholder="Поиск:" autofocus>
+          </form>
+          <a class="header-bookmarks" href="#" aria-label="Закладки">Закладки: 0</a>
+          <a class="header-basket" href="#" aria-label="Корзина">Корзина: 0</a>
+          <a class="header-arrange-button" href="#" aria-label="Оформить заказ">Оформить заказ</a>
+        </div>
       </section>
 
       <section class="user-contacts-account">
-        <h2 class="visually-hidden">Навигация по сайту</h2>
-        <p class="user-contacts-account__lead"><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
-        <div class="header-contacts">
-          <a class="header-contacts__phone" href="rel:+7(812)5550555" aria-label="Телефон для связи">+7 (812) 555-05-55</a>
-          <address class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+        <div class="container-info">
+          <h2 class="visually-hidden">Навигация по сайту</h2>
+          <div class="container-lead">
+            <p class="user-contacts-account__lead"><i>Интернет-магазин строительных материалов и инструментов для ремонта</i></p>
+          </div>
+
+
+          <div class="header-contacts">
+            <a class="header-contacts__phone" href="rel:+7(812)5550555" aria-label="Телефон для связи">+7 (812) 555-05-55</a>
+            <address class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          </div>
+
+
+          <div class="user-menu">
+            <a class="user-menu__login" href="#" aria-label="Войти">Войти</a>
+            <a class="user-menu__registration" href="#" aria-label="Регистрация">Регистрация</a>
+          </div>
         </div>
-        <div class="user-menu">
-          <a class="user-menu__login" href="#" aria-label="Войти">Войти</a>
-          <a class="user-menu__registration" href="#" aria-label="Регистрация">Регистрация</a>
-        </div>
+
         <nav class="menu" role="menubar">
           <ul class="menu-list">
             <li class="menu-list__item" aria-current="page"><a href="index.html" aria-label="Главная">Главная</a></li>
@@ -82,25 +94,24 @@
         </div>
 
         <div class="widget-promo">
-          <div class="promo-perforator">
+          <div class="promo-perforator visually-hidden">
             <h3 class="promo-perforator__h3">Перфораторы</h3>
             <p class="promo-perforator__caption">Настоящие мужские игрушки</p>
           </div>
-          <!--
-          <div class="promo-drill">
+          <!--<div class="promo-drill">
              <h3 class="promo-drill__h3">Дрели</h3>
              <p class="promo-drill__caption">Соседям на радость!</p>
-          </div>
-          -->
+          </div>-->
           <img class="widget-promo__img1" src="img/men-perforator.jpg" width="620" height="266" alt="Строитель с перфоратором">
-          <!--<img class="widget-promo__img2" src="img/men-drel.jpg" width="620" height="266" alt="Строитель с дрелью">-->
+          <!--<img class="widget-promo__img2" src="img/men-drel.jpg" width="620" height="266" alt="Строитель с дрелью">
           <button class="widget-promo__slide-previous" type="button" aria-label="Предыдущий слайд">Предыдущий слайд</button>
           <button class="widget-promo__slide-next" type="button" aria-label="Следующий слайд">Следующий слайд</button>
-          <a class="widget-promo__link" href="catalog.html" aria-label="Открыть каталог товаров">Открыть каталог</a>
+          <a class="widget-promo__link" href="catalog.html" aria-label="Открыть каталог товаров">Открыть каталог</a>-->
         </div>
       </section>
 
       <section class="product-section"> 
+        
         <div class="product-section__wrap">
           <h2 class="product-section-h2">Популярные товары:</h2>
           <a class="product-section__link" href="catalog.html" aria-label="Перейти к популярным товарам">Все популярные товары</a>
@@ -215,7 +226,6 @@
               <img class="manufacturer-img8" src="img/Metabo.png" width="204" height="69" alt="Логотип компании Metabo">
             </a>
           </li>
-
         </ul>
       </section>
 
@@ -267,30 +277,32 @@
         </div>
       </section>
 
-      <section class="about-company-section">
-        <h2 class="section-h2">Компания «Техномарт» </h2>
-        <p class="about-company-section__text1">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p class="about-company-section__text2">
-          Мы можем доставить ваш товар в самые отдаленные точки России!
-          Техномарт работает со многими транспортными компаниями:
-        </p>
-        <ul class="about-company-section-list">
-          <li class="about-company-section-list__item">Деловые линии</li>
-          <li class="about-company-section-list__item">Автотрейдинг</li>
-          <li class="about-company-section-list__item">ЖелДорЭкспедиция</li>
-        </ul>
-        <a class="about-company-section__link" href="#" aria-label="Подробнее о компании Техномарт">Подробнее о компании</a>
-      </section>
+      <div class="container-info-company">
+        <section class="about-company-section">
+          <h2 class="section-h2">Компания «Техномарт» </h2>
+          <p class="about-company-section__text1">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p class="about-company-section__text2">
+            Мы можем доставить ваш товар в самые отдаленные точки России!
+            Техномарт работает со многими транспортными компаниями:
+          </p>
+          <ul class="about-company-section-list">
+            <li class="about-company-section-list__item">Деловые линии</li>
+            <li class="about-company-section-list__item">Автотрейдинг</li>
+            <li class="about-company-section-list__item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="about-company-section__link" href="#" aria-label="Подробнее о компании Техномарт">Подробнее о компании</a>
+        </section>
 
-      <section class="contacts-section">
-        <h2 class="section-h2">Контакты</h2>
-        <p class="contacts-section__text">
-          Вы можете забрать товар сами,
-          заехав в наш офис:
-        </p>
-        <img class="contacts-section__img" src="img/mini-map.png" width="300" height="158" alt="Карта">
-        <a class="contacts-section__link" href="#" aria-label="Заблудились? Напишите нам!">Заблудились? Напишите нам!</a>
-      </section>
+        <section class="contacts-section">
+          <h2 class="section-h2">Контакты</h2>
+          <p class="contacts-section__text">
+            Вы можете забрать товар сами,
+            заехав в наш офис:
+          </p>
+          <img class="contacts-section__img" src="img/mini-map.png" width="300" height="158" alt="Карта">
+          <a class="contacts-section__link" href="#" aria-label="Заблудились? Напишите нам!">Заблудились? Напишите нам!</a>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
