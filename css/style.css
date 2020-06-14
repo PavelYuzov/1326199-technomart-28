@@ -184,7 +184,7 @@ input.search-form__input::placeholder {
   text-align: center;
   padding-top: 10px;
   padding-right: 43px;
-  padding-bottom: 9px;
+  padding-bottom: 8px;
   padding-left: 24px;
 }
 
@@ -647,6 +647,7 @@ input.search-form__input::placeholder {
   border: 1px solid #EAEAEA;
   text-align: center;
   margin-bottom: 18px;
+  position: relative;
 }
 
 .container-price-card {
@@ -663,7 +664,6 @@ input.search-form__input::placeholder {
   color: var(--basic-black);
   margin-left: 18px;
   margin-right: 17px;
-  margin-bottom: 1px;
 }
 
 .product-info__old-price {
@@ -690,17 +690,18 @@ input.search-form__input::placeholder {
   padding-left: 32px;
   margin-top: 3px;
   margin-right: 32px;
-  margin-bottom: 21px;
+  margin-bottom: 31px;
   margin-left: 47px;
 }
 
 .product-card-choice {
+  position: absolute;
   display: flex;
   justify-content: center;
   text-align: center;
   flex-wrap: wrap;
   display: none;
- 
+  top: 40px;
 }
 
 .product-card-choice__link {
@@ -712,9 +713,9 @@ input.search-form__input::placeholder {
   background-color: var(--color-green-button);
   border-radius: 2px;
   box-shadow: inset 0px -3px 0px #367315;
-  padding-top: 10px;
+  padding-top: 13px;
   padding-right: 45px;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
   padding-left: 58px;
 }
 
@@ -730,6 +731,7 @@ input.search-form__input::placeholder {
   padding-right: 34px;
   padding-bottom: 9px;
   padding-left: 33px;
+  margin-top: 20px;
 }
 
 /* Секция с производителями */
@@ -1208,7 +1210,7 @@ input.search-form__input::placeholder {
   margin-left: 51px;
 }
 
-.pagination-list__item1,
+
 .pagination-list__item2,
 .pagination-list__item3,
 .pagination-list__item4 {
@@ -1218,7 +1220,17 @@ input.search-form__input::placeholder {
   border-radius: 2px;
 }
 
-.pagination-list__item1,
+.pagination-list__item1 {
+  font-family: "PT Sans";
+  line-height: 18px;
+  border-radius: 2px;
+  padding-top: 11px;
+  padding-right: 15px;
+  padding-bottom: 11px;
+  padding-left: 15px;
+  margin-right: 10px;
+}
+
 .pagination-list__item2,
 .pagination-list__item3 {
   padding-top: 10px;
@@ -1233,6 +1245,14 @@ input.search-form__input::placeholder {
   padding-right: 31px;
   padding-bottom: 10px;
   padding-left: 32px;
+}
+
+.pagination-list__item1 a {
+  color: var(--basic-white);
+}
+
+.pagination-list__item1 {
+  background-color: var(--basic-red);
 }
 
 .meta-perforator {
@@ -1252,7 +1272,6 @@ input.search-form__input::placeholder {
   width: 940px;
 }
 
-.pagination-list__item1 a,
 .pagination-list__item2 a,
 .pagination-list__item3 a,
 .pagination-list__item4 a{
@@ -1622,14 +1641,14 @@ input.search-form__input::placeholder {
   color: var(--color-active-grey-bottom);
 }
 
-.pagination-list__item1:hover,
+
 .pagination-list__item2:hover,
 .pagination-list__item3:hover,
 .pagination-list__item4:hover {
   border-color: var(--color-active-grey-bottom);
 }
 
-.pagination-list__item1:active,
+
 .pagination-list__item2:active,
 .pagination-list__item3:active,
 .pagination-list__item4:active {
@@ -1718,3 +1737,20 @@ input.search-form__input::placeholder {
   background-color: rgba(169, 169, 169, 0.3);
 }
 
+.section-cards__price:hover,
+.section-cards__type:hover,
+.section-cards__functions:hover {
+  color: var(--basic-black);
+  opacity: 1;
+  border-bottom: none;
+  padding-bottom: 1px;
+}
+
+.section-cards__price:active,
+.section-cards__type:active,
+.section-cards__functions:active {
+  color: var(--basic-red);
+  opacity: 1;
+  border-bottom: none;
+  padding-bottom: 1px;
+}
