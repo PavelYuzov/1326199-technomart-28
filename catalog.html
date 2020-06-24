@@ -71,10 +71,10 @@
         <div class="header-catalog-menu">
           <h1 class="catalog-h1">Перфораторы</h1>
           <ul class="breadcrumbs-list" role="menubar">
-            <li aria-current="page"><a class="breadcrumbs-list__item" href="index.html" aria-label="Перейти к главной странице">Главная</a></li>
-            <li><a class="breadcrumbs-list__item" href="catalog.html" aria-label="Перейти в каталог">Каталог</a></li>
-            <li><a class="breadcrumbs-list__item" href="#" aria-label="Перейти в раздел с инструментами">Инструмент</a></li>
-            <li><a class="breadcrumbs-list__item" href="#" aria-label="Раздел с перфоратарами">Перфораторы</a></li>
+            <li aria-current="page"><a class="breadcrumbs-list__item1" href="index.html" aria-label="Перейти к главной странице"><svg class="svg-home" width="15" height="12" viewBox="0 0 15 12"><g fill="#C1C6CE"><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g></svg></a></li>
+            <li><a class="breadcrumbs-list__item2" href="catalog.html" aria-label="Перейти в каталог">Каталог</a></li>
+            <li><a class="breadcrumbs-list__item3" href="#" aria-label="Перейти в раздел с инструментами">Инструмент</a></li>
+            <li class="breadcrumbs-perfo"><a class="breadcrumbs-list__item4" href="#" aria-label="Раздел с перфоратарами">Перфораторы</a></li>
           </ul>
         </div>
         
@@ -86,24 +86,6 @@
                 <fieldset class="filter-form-price">
                   <legend class="filter-form__legend-price">Цена:</legend>
                   <p class="visually-hidden">Для работы с фильтром - укажите минимальную и максимальную сумму товара</p>
-                  <!--
-                  <div class="filter-form-price__range-wrap">
-                    <label class="visually-hidden" for="range" id="label-range">Ползунок градации цены</label>
-                    <input class="filter-form-price__range" type="range" id="range" aria-labelledby="label-range" name="range-cash" min="0" max="30000" step="500" aria-label="Ползунок с выбором ценовой категории">
-                  </div>
-                  
-                  <div class="container-min-max">
-                    <label class="visually-hidden" for="min" id="min-label">Минимальная цена</label>
-                    <input class="filter-form-price__min" type="number" id="min" aria-labelledby="min-label" name="min" value="0" aria-label="Поле ввода минимальной цены">
-
-                    <p class="filter-form-price__dash">-</p>
-
-                    <label class="visually-hidden" for="max" id="max-label">Максимальная цена</label>
-                    <input class="filter-form-price__max" type="number" id="max" aria-labelledby="max-label" name="max" value="30000" aria-label="Поле ввода максимальной цены">
-                  </div>
-                  
-                  </label>
-                  -->
 
                   <form method="get" action="https://echo.htmlacademy.ru">
                     <fieldset class="filter-item">
@@ -133,19 +115,48 @@
                   <legend class="filter-form__legend">Производители:</legend>
                   <div class="container-filter-manufacure">
                     <p class="visually-hidden">Для работы с фильтром - выберите интерсующую фирму для фильтрации товара</p>
-                    <label><input class="filter-form-manufacure__checkbox1" type="checkbox" name="Manufactures" checked value="BOSCH">BOSCH</label>
-                    <label><input class="filter-form-manufacure__checkbox2" type="checkbox" name="Manufactures" value="Interskol">Интерскол</label>
-                    <label><input class="filter-form-manufacure__checkbox3" type="checkbox" name="Manufactures" checked value="Makita">Makita</label>
-                    <label><input class="filter-form-manufacure__checkbox4" type="checkbox" name="Manufactures" value="Dewalt">Dewalt</label>
-                    <label><input class="filter-form-manufacure__checkbox5" type="checkbox" name="Manufactures" value="Hitachi">Hitachi</label>
+                    <ul class="filter-manufacture">
+                      <li class="filter-option filter-checkbox">
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Manufactures" id="filter-bosch" checked value="BOSCH">
+                        <label for="filter-bosch">BOSCH</label>
+                      </li>
+
+                      <li class="filter-option filter-checkbox">
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Manufactures" id="filter-interskol" value="Interskol">
+                        <label for="filter-interskol">Интерскол</label>
+                      </li>
+
+                      <li class="filter-option filter-checkbox">
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Manufactures" id="filter-makita" checked value="Makita">
+                        <label for="filter-makita">Makita</label>
+                      </li>
+
+                      <li class="filter-option filter-checkbox">
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Manufactures" id="filter-dewalt" value="Dewalt">
+                        <label for="filter-dewalt">Dewalt</label>
+                      </li>
+
+                      <li class="filter-option filter-checkbox">
+                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Manufactures" id="filter-hitachi" value="Hitachi">
+                        <label for="filter-hitachi">Hitachi</label>
+                      </li>
+                    </ul>
                   </div>
                 </fieldset>
 
                 <fieldset class="filter-form-power">
-                  <legend class="filter-form__legend">Питание:</legend>
+                  <legend class="filter-form__legend-power">Питание:</legend>
                   <p class="visually-hidden">Для работы с фильтром - выберите один из типов питания электроинструмента</p>
-                  <label><input class="filter-form-power__radio1" type="radio" name="energy_supply" checked value="battery">Аккумуляторные</label>
-                  <label><input class="filter-form-power__radio2" type="radio" name="energy_supply" value="ac_power">Сетевые</label>
+                  <ul class="filter-power">
+                    <li class="filter-option filter-radio">
+                      <input class="visually-hidden filter-input-radio filter-input" type="radio" name="energy_supply" id="filter-battery" checked value="battery">
+                      <label for="filter-battery">Аккумуляторные</label>
+                    </li>
+                    <li class="filter-option filter-radio">
+                      <input class="visually-hidden filter-input-radio filter-input" type="radio" name="energy_supply" id="filter-ac_power" value="ac_power">
+                      <label for="filter-ac_power">Сетевые</label>
+                    </li>
+                  </ul>
                 </fieldset>
               </form>
               <a class="filter-result" href="#" aria-label="Показать товар с примененными фильтрами">Показать</a>
@@ -158,8 +169,8 @@
                 <a class="section-cards__price" href="#" aria-label="Группировка товара по цене">По цене</a>
                 <a class="section-cards__type" href="#" aria-label="Группировка товара по типу">По типу</a>
                 <a class="section-cards__functions" href="#" aria-label="Группировка товара по функционалу">По функционалу</a>
-                <a class="section-cards__up-price" href="#" aria-label="Группировка товара на повышение цены">Повышение цены</a>
-                <a class="section-cards__down-price" href="#" aria-label="Группировка товара на понижении цены">Понижение цены</a>
+                <a class="section-cards__up-price" href="#" aria-label="Группировка товара на повышение цены"><svg class="svg-up" width="11" height="10" viewBox="0 0 11 10"><path id="up" fill="#C5C5C5" d="M5.5 0L0 10h11z"/></svg></a>
+                <a class="section-cards__down-price" href="#" aria-label="Группировка товара на понижении цены"><svg class="svg-down" width="11" height="10" viewBox="0 0 11 10"><path id="down" fill="#C5C5C5" d="M5.5 10L0 0h11"/></svg></a>
               </div>
 
               <div class="container-card">
@@ -211,7 +222,7 @@
 
                   <li class="product-card">
                     <div class="product-info">
-                      <img class="product-info__img-3000" src="img/B3000.jpg" width="127" height="112" alt="Изображение перфоратора BOSCH 3000">
+                      <img class="product-info__img" src="img/B3000.jpg" width="127" height="112" alt="Изображение перфоратора BOSCH 3000">
                       <div class="product-card-choice">
                         <a class="product-card-choice__link" href="#" aria-label="Купить перфоратор BOSCH 3000">Купить</a>
                         <button class="product-card-choice__button" type="button" aria-label="Добавить перфоратор BOSCH 3000 в закладки">В закладки</button>
@@ -394,7 +405,7 @@
               <a class="communication-wrap__mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
             <div class="development-wrap">
-              <p class="development-wrap__lead">Разработано -</p>
+              <p class="development-wrap__lead">Разработано —</p>
               <a class="development-wrap__url" href="https://htmlacademy.ru/study" rel="nowollow">htmlacademy.ru</a>
             </div>
           </div>
