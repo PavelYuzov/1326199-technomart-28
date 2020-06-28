@@ -111,52 +111,43 @@
                   </form>
                 </fieldset>
 
-                <fieldset class="filter-form-manufacure">
-                  <legend class="filter-form__legend">Производители:</legend>
-                  <div class="container-filter-manufacure">
-                    <p class="visually-hidden">Для работы с фильтром - выберите интерсующую фирму для фильтрации товара</p>
-                    <ul class="filter-manufacture">
-                      <li class="filter-option filter-checkbox">
-                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Manufactures" id="filter-bosch" checked value="BOSCH">
-                        <label for="filter-bosch">BOSCH</label>
-                      </li>
-
-                      <li class="filter-option filter-checkbox">
-                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Manufactures" id="filter-interskol" value="Interskol">
-                        <label for="filter-interskol">Интерскол</label>
-                      </li>
-
-                      <li class="filter-option filter-checkbox">
-                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Manufactures" id="filter-makita" checked value="Makita">
-                        <label for="filter-makita">Makita</label>
-                      </li>
-
-                      <li class="filter-option filter-checkbox">
-                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Manufactures" id="filter-dewalt" value="Dewalt">
-                        <label for="filter-dewalt">Dewalt</label>
-                      </li>
-
-                      <li class="filter-option filter-checkbox">
-                        <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="Manufactures" id="filter-hitachi" value="Hitachi">
-                        <label for="filter-hitachi">Hitachi</label>
-                      </li>
-                    </ul>
-                  </div>
+               <fieldset class="filter-item-manufacture">
+                  <legend class="fieldset__h3">Производители:</legend>
+                  <form action="post">
+                    <label class="check option">
+                      <input class="check__input" type="checkbox" checked>BOSCH
+                      <span class="check__box"></span>
+                    </label>
+                    <label class="check option">
+                      <input class="check__input" type="checkbox">ИНТЕРСКОЛ
+                      <span class="check__box"></span>
+                    </label>
+                    <label class="check option">
+                      <input class="check__input" type="checkbox" checked>MAKITA
+                      <span class="check__box"></span>
+                    </label>
+                    <label class="check option">
+                      <input class="check__input" type="checkbox">DEWALT
+                      <span class="check__box"></span>
+                    </label>
+                    <label class="check option">
+                      <input class="check__input" type="checkbox">HITACHI
+                      <span class="check__box"></span>
+                    </label>
+                  </form>
                 </fieldset>
 
-                <fieldset class="filter-form-power">
-                  <legend class="filter-form__legend-power">Питание:</legend>
+                <fieldset class="filter-item-power">
+                  <legend class="fieldset__h3-power">Питание:</legend>
                   <p class="visually-hidden">Для работы с фильтром - выберите один из типов питания электроинструмента</p>
-                  <ul class="filter-power">
-                    <li class="filter-option filter-radio">
-                      <input class="visually-hidden filter-input-radio filter-input" type="radio" name="energy_supply" id="filter-battery" checked value="battery">
-                      <label for="filter-battery">Аккумуляторные</label>
-                    </li>
-                    <li class="filter-option filter-radio">
-                      <input class="visually-hidden filter-input-radio filter-input" type="radio" name="energy_supply" id="filter-ac_power" value="ac_power">
-                      <label for="filter-ac_power">Сетевые</label>
-                    </li>
-                  </ul>
+                  <label class="radio option">
+                    <input class="radio__input" type="radio" name="energy_supply" id="filter-battery" checked value="battery checked">Аккумуляторные
+                    <span class="radio__box"></span>
+                  </label>
+                  <label class="radio option">
+                    <input class="radio__input" type="radio" name="energy_supply" id="filter-ac_power" value="ac_power">Сетевые
+                    <span class="radio__box"></span>
+                  </label>
                 </fieldset>
               </form>
               <a class="filter-result" href="#" aria-label="Показать товар с примененными фильтрами">Показать</a>
@@ -175,7 +166,22 @@
 
               <div class="container-card">
                 <ul class="product-catalog-list">
-                  <li class="product-card">
+                  <li class="product-card" tabindex="0">
+                    <div class="product-info">
+                      <img class="product-info__img" src="img/B6000.jpg" width="144" height="128" alt="Изображение перфоратора BOSCH 6000">
+                      <div class="product-card-choice" tabindex="0">
+                        <a class="product-card-choice__link" href="#" aria-label="Купить перфоратор BOSCH 6000">Купить</a>
+                        <button class="product-card-choice__button" type="button" aria-label="Добавить перфоратор BOSCH 6000 в закладки">В закладки</button>
+                      </div>
+                      <div class="container-info-price">
+                        <h3 class="product-info__title">Перфоратор BOSCH BFG 6000</h3>
+                        <p class="product-info__old-price">30500 Р.</p>
+                        <p class="product-info__price">25500 Р.</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="product-card" tabindex="0">
                     <div class="product-info">
                       <img class="product-info__img" src="img/B6000.jpg" width="144" height="128" alt="Изображение перфоратора BOSCH 6000">
                       <div class="product-card-choice">
@@ -190,7 +196,7 @@
                     </div>
                   </li>
 
-                  <li class="product-card">
+                  <li class="product-card" tabindex="0">
                     <div class="product-info">
                       <img class="product-info__img" src="img/B6000.jpg" width="144" height="128" alt="Изображение перфоратора BOSCH 6000">
                       <div class="product-card-choice">
@@ -205,22 +211,7 @@
                     </div>
                   </li>
 
-                  <li class="product-card">
-                    <div class="product-info">
-                      <img class="product-info__img" src="img/B6000.jpg" width="144" height="128" alt="Изображение перфоратора BOSCH 6000">
-                      <div class="product-card-choice">
-                        <a class="product-card-choice__link" href="#" aria-label="Купить перфоратор BOSCH 6000">Купить</a>
-                        <button class="product-card-choice__button" type="button" aria-label="Добавить перфоратор BOSCH 6000 в закладки">В закладки</button>
-                      </div>
-                      <div class="container-info-price">
-                        <h3 class="product-info__title">Перфоратор BOSCH BFG 6000</h3>
-                        <p class="product-info__old-price">30500 Р.</p>
-                        <p class="product-info__price">25500 Р.</p>
-                      </div>
-                    </div>
-                  </li>
-
-                  <li class="product-card">
+                  <li class="product-card" tabindex="0">
                     <div class="product-info">
                       <img class="product-info__img" src="img/B3000.jpg" width="127" height="112" alt="Изображение перфоратора BOSCH 3000">
                       <div class="product-card-choice">
@@ -235,7 +226,7 @@
                     </div>
                   </li>
 
-                  <li class="product-card">
+                  <li class="product-card" tabindex="0">
                     <div class="product-info">
                       <img class="product-info__img" src="img/B6000.jpg" width="144" height="128" alt="Изображение перфоратора BOSCH 6000">
                       <div class="product-card-choice">
@@ -250,7 +241,7 @@
                     </div>
                   </li>
 
-                  <li class="product-card">
+                  <li class="product-card" tabindex="0">
                     <div class="product-info">
                       <img class="product-info__img" src="img/B2000.jpg" width="127" height="112" alt="Изображение перфоратора BOSCH 2000">
                       <div class="product-card-choice">
@@ -265,7 +256,7 @@
                     </div>
                   </li>
 
-                  <li class="product-card">
+                  <li class="product-card" tabindex="0">
                     <div class="product-info">
                       <img class="product-info__img" src="img/B3000.jpg" width="127" height="112" alt="Изображение перфоратора BOSCH 3000">
                       <div class="product-card-choice">
@@ -280,7 +271,7 @@
                     </div>
                   </li>
 
-                  <li class="product-card">
+                  <li class="product-card" tabindex="0">
                     <div class="product-info">
                       <img class="product-info__img" src="img/B6000.jpg" width="144" height="128" alt="Изображение перфоратора BOSCH 6000">
                       <div class="product-card-choice">
@@ -295,7 +286,7 @@
                     </div>
                   </li>
 
-                  <li class="product-card">
+                  <li class="product-card" tabindex="0">
                     <div class="product-info">
                       <img class="product-info__img" src="img/B2000.jpg" width="127" height="112" alt="Изображение перфоратора BOSCH 2000">
                       <div class="product-card-choice">
