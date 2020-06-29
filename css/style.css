@@ -970,7 +970,7 @@ input.search-form__input::placeholder {
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
-  outline: none;
+ 
   opacity: 0.4;
   margin-right: 529px;
 }
@@ -983,7 +983,7 @@ input.search-form__input::placeholder {
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
-  outline: none;
+ 
 }
 
 .hidden {
@@ -1051,24 +1051,28 @@ input.search-form__input::placeholder {
   margin-left: 24px;
 }
 
-.widget-promo__link::before {
+.widget-promo-radio1{
   content: "";
   width: 10px;
   height: 10px;
   position: absolute;
   background-image: url(../img/promo-radio-0ff.png);
   background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
   left: 295px;
   bottom: 36px;
 }
 
-.widget-promo__link::after {
+.widget-promo-radio2 {
   content: "";
   width: 10px;
   height: 10px;
   position: absolute;
   background-image: url(../img/promo-radio-on.png);
   background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
   left: 315px;
   bottom: 36px;
 }
