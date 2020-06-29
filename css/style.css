@@ -1092,7 +1092,14 @@ input.search-form__input::placeholder {
   margin: 0;
 }
 
-.breadcrumbs-list__item1 {
+.breadcrumbs-list__item2,
+.breadcrumbs-list__item3, 
+.breadcrumbs-list__item4 {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
   position: relative;
 }
 
@@ -1126,7 +1133,7 @@ input.search-form__input::placeholder {
 
 .breadcrumbs-list__item3 {
   color: var(--basic-black);
-  margin-left: 49px;
+  margin-left: 41px;
   position: relative;
 }
 
@@ -1143,7 +1150,7 @@ input.search-form__input::placeholder {
 
 .breadcrumbs-list__item4 {
   color: var(--basic-black);
-  margin-left: 57px;
+  margin-left: 42px;
 }
 
 .product-section-list {
@@ -1157,7 +1164,7 @@ input.search-form__input::placeholder {
 /*Карточка товара----------------------------------------------*/
 
 .product-card {
-  font-family: "PT sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: bold;
   border: 1px solid #EAEAEA;
   text-align: center;
@@ -1557,7 +1564,7 @@ input.search-form__input::placeholder {
 }
 
 .delivery-wrap__desc {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   line-height: 25px;
   width: 275px;
   margin-top: 29px;
@@ -1580,7 +1587,7 @@ input.search-form__input::placeholder {
 }
 
 .credit-wrap__desc {
-  font-family: "PT sans";
+  font-family: "PT Sans", sans-serif;
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -1602,14 +1609,14 @@ input.search-form__input::placeholder {
 
 .about-company-section__text1 {
   width: 478px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   margin-bottom: 26px;
 }
 
 .about-company-section__text2 {
   width: 408px;
   line-height: 25px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   margin-bottom: 1px;
 }
 
@@ -1722,7 +1729,7 @@ input.search-form__input::placeholder {
 .contacts-section__text {
   width: 200px;
   line-height: 25px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   margin-bottom: 30px;
 }
 
@@ -1958,14 +1965,14 @@ input.search-form__input::placeholder {
 .pagination-list__item2,
 .pagination-list__item3,
 .pagination-list__item4 {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   line-height: 18px;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
 }
 
 .pagination-list__item1 {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   line-height: 18px;
   border-radius: 2px;
   padding-top: 10px;
@@ -2024,7 +2031,7 @@ input.search-form__input::placeholder {
 }
 
 .meta-perforator__desc {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   line-height: 25px;
   margin: 0;
   margin-bottom: 67px;
@@ -2065,7 +2072,7 @@ input.search-form__input::placeholder {
 }
 
 .breadcrumbs-list__item {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   color: var(--basic-black);
 }
@@ -2077,7 +2084,7 @@ input.search-form__input::placeholder {
 
 .section-filter,
 .section-cards__text {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: normal;
@@ -2109,7 +2116,7 @@ input.search-form__input::placeholder {
 .filter-form__legend,
 .filter-form__legend-power,
 .filter-form__legend-price {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -2362,7 +2369,7 @@ input.search-form__input::placeholder {
 
 .filter-form-manufacure label,
 .filter-form-power label {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 15px;
   line-height: 19px;
   text-transform: uppercase;
@@ -2423,7 +2430,7 @@ input.search-form__input::placeholder {
 }
 
 .filter-result {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   width: 220px;
   font-size: 13px;
   line-height: 18px;
@@ -2439,7 +2446,7 @@ input.search-form__input::placeholder {
 .section-cards__price,
 .section-cards__type,
 .section-cards__functions {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -2745,7 +2752,7 @@ input.search-form__input::placeholder {
 }
 
 .fieldset__h3 {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -2753,34 +2760,24 @@ input.search-form__input::placeholder {
   text-transform: uppercase;
   margin-left: 1px;
   margin-bottom: 18px;
-  margin-right: 98px;
+  margin-right: 77px;
   margin-top: 6px;
 }
 
 .fieldset__h3-power {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-right: 153px;
+  margin-right: 143px;
   padding-top: 18px;
   margin-bottom: 23px;
 }
 
 .option {
-  font-family: "PT Sans" sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 19px;
-  display: block;
-  text-transform: uppercase;
-}
-
-.check {
-  font-family: "PT Sans" sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -2808,7 +2805,7 @@ input.search-form__input::placeholder {
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
-  left: 1px;
+  left: 0px;
   margin-top: -3px;
 }
 
