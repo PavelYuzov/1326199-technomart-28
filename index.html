@@ -336,7 +336,52 @@
           </section>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+      <section class="popup-on popup-off">
+        <div class="popup__line"><img src="img/line-popup.png" alt="Красная линия"></div>
+        <p class="visually-hidden">Имя и Фамилия, Электронный адрес и Текст письма - обязательны к заполнению.</p>
+        <div class="container-popup">
+          <form class="popup-on__form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="popup__form">
+              <div class="popup__input1">
+                <label class="popup__name" for="popup-name" id="label-name">Ваше имя:</label>
+                <input class="input-area name1-name2" type="text" name="name" id="papup-name" aria-labelledby="label-name" aria-required="true" placeholder="Имя Фамилия" required>
+              </div>
+      
+              <div class="popup__input2">
+                <label class="popup__email" for="popup-mail" id="label-mail">Ваш e-mail:</label>
+                <input class="input-area email-js" type="email" name="mail" id="popup-mail" aria-labelledby="label-mail" aria-required="true" placeholder="email@example.com" required>
+              </div>
+            </div>
+            <div class="popup__input3">
+              <label class="popup__comment" for="popup-comment" id="label-comment">Текст письма:</label>
+              <textarea class="input-area1" name="comment" id="popup-comment" aria-labelledby="label-comment" rows="5" cols="62" ria-required="true" placeholder="В свободной форме" required></textarea>
+            </div>
+          </form>
+
+          <div class="popup__button">
+            <button class="popup__submit" type="submit" aria-label="Отправить">Отправить</button>
+          </div>
+        </div>
+        <button class="popup__close" type="button" aria-label="Закрыть окно"><svg class="popup__svg" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"/></svg></button>
+      </section> 
     </main>
+
+
+
+
+
+
 
     <footer class="footer">
       <section class="footer-nav">
@@ -415,29 +460,12 @@
       </section>
     </footer>
   </body>
+
+  <script src="js/popup.js"></script>
+
 </html>
 
-<!--popup
-<section>
-  <p class="visually-hidden">Имя и Фамилия, Электронный адрес и Текст письма - обязательны к заполнению.</p>
-  <form action="https://echo.htmlacademy.ru" method="POST">
-    <p>
-      <label for="popup-name" id="label-name">Ваше имя:</label>
-      <input type="text" name="name" id="papup-name" aria-labelledby="label-name" aria-required="true" required placeholder="Имя Фамилия" autofocus>
-    </p>
-    <p>
-      <label for="popup-mail" id="label-mail">Ваш e-mail:</label>
-      <input type="email" name="mail" id="popup-mail" aria-labelledby="label-mail" aria-required="true" required placeholder="email@example.com">
-    </p>
-
-    <label for="popup-comment" id="label-comment">Текст письма:</label>
-    <textarea class="visually-hidden" name="comment" id="popup-comment" aria-labelledby="label-comment" cols="100" rows="6" ria-required="true" required placeholder="В свободной форме"></textarea>
-
-    <button type="submit" aria-label="Оформить заказ"><a href="#">Оформить заказ</a></button>
-  </form>
-  <button type="button"><img src="img/icon-close.svg" alt="Закрыть поле оформления заказа"></button>
-</section>    
-
+<!--
 <div>
   <button type="button"><img src="img/icon-close.svg" alt="Закрыть карту"></button>
   <img src="img/big-map.png" alt="Большая карта с расположением магазина">

@@ -35,8 +35,9 @@
   --color-active-green-button: #518534;
   --color-active-blue-button: #161D29;
   --color-active-grey-bottom: #C5C5C5;
-  --color-filter-background: #F7F3EC;
+  --color-filter-background: #948a78;
   --color-hover-button: #CA2C37;
+  --color-popup-ground: #F4F4F4;
 
   --body-font-size: 13px;
   --body-line-height: 24px;
@@ -1431,7 +1432,7 @@ input.search-form__input::placeholder {
 
 .manufacture-section-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0px;
   padding: 0px;
@@ -1728,7 +1729,158 @@ input.search-form__input::placeholder {
 
 .container-info-company {
   margin-bottom: 70px;
+  position: relative;
 }
+
+/* ПОПАП ФОРМА --------------------------------------------------------------------------------------*/
+.popup-on {
+  width: 620px;
+  margin: 0 auto;
+  background-color: var(--basic-white);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  display: block;
+  position: absolute;
+  top: 2370px;
+  left: 322px;
+  animation: bounce 0.5s;
+}
+
+.popup-off {
+  display: none;
+}
+
+.container-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 620px;
+  position: relative;
+}
+
+.popup__line {
+  content: "";
+  position: absolute;
+  top: -10px;
+}
+
+.popup__close {
+  list-style: none;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 19px;
+  right: 5px;
+}
+
+.popup__svg {
+  fill: #EE3643;
+}
+
+.popup__svg:hover {
+  fill: var(--color-hover-button);
+}
+
+.popup__svg:active {
+  fill: var(--color-active-red);
+}
+
+.popup__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 46px;
+  margin-bottom: 15px;
+}
+
+.popup__email {
+  padding-left: 1px;
+}
+
+.popup__input1,
+.popup__input2,
+.popup__input3 {
+  font-family: "Cuprum", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-area::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.input-area1::placeholder {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  padding-top: 2px;
+  padding-left: 7px;
+}
+
+.input-area {
+  padding-left: 9px;
+  padding-right: 57px;
+  height: 30px;
+}
+
+.input-area1 {
+  width: 452px;
+  height: 105px;
+}
+
+.popup__name,
+.popup__email,
+.popup__comment {
+  margin-bottom: 11px;
+}
+
+.popup__name {
+  padding-left: 1px;
+}
+
+.popup__button {
+  background-color: var(--color-popup-ground);
+  margin-top: 37px;
+}
+
+.popup__submit {
+  list-style: none;
+  border: none;
+  background-color: var(--color-background-price);
+  color: var(--basic-white);
+  font-family: "Cuprum", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-top: 11px;
+  padding-right: 200px;
+  padding-bottom: 9px;
+  padding-left: 199px;
+  margin-top: 37px;
+  margin-right: 80px;
+  margin-bottom: 37px;
+  margin-left: 80px;
+}
+
+.input-area,
+.input-area1 {
+  border: 2px solid #C5C5C5;
+  border-radius: 2px;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
 
 .container-about-company-section {
   margin: 0 auto;
@@ -2600,7 +2752,8 @@ input.search-form__input::placeholder {
 .product-section__link:hover,
 .manufacture-section__link:hover,
 .about-company-section__link:hover,
-.contacts-section__link:hover {
+.contacts-section__link:hover,
+.popup__submit:hover {
   background-color: var(--color-hover-button);
 }
 
@@ -2608,7 +2761,8 @@ input.search-form__input::placeholder {
 .product-section__link:active,
 .manufacture-section__link:active,
 .about-company-section__link:active,
-.contacts-section__link:active {
+.contacts-section__link:active,
+.popup__submit:active {
   background-color: var(--color-active-red);
 }
 
@@ -3080,4 +3234,34 @@ input.search-form__input::placeholder {
   padding-bottom: 9px;
   padding-left: 18px;
   margin-left: 0px;
+}
+
+.popup-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  70% {
+    transform: translateX(30px);
+  }
+
+  90% {
+    transform: translateX(-10px);
+  }
+
+  94% {
+    transform: translateX(10px);
+  }
+
+  97% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
