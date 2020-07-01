@@ -3249,19 +3249,37 @@ input.search-form__input::placeholder {
     transform: translateX(30px);
   }
 
-  90% {
+  95% {
     transform: translateX(-10px);
-  }
-
-  94% {
-    transform: translateX(10px);
-  }
-
-  97% {
-    transform: translateX(-5px);
   }
 
   100% {
     transform: translateX(0);
   }
+}
+
+.popup-map-on {
+  position: absolute;
+  top: 2375px;
+  left: 168px;
+  display: block;
+}
+
+.popup-map-off {
+  display: none;
+}
+
+.container-map {
+  margin: 0 auto;
+  width: 949px;
+  position: relative;
+}
+
+.map__close {
+  list-style: none;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 45px;
+  right: 8px;
 }

@@ -18,6 +18,13 @@ try{
 link.addEventListener("click", function(evt) {
   evt.preventDefault();
   popup.classList.remove("popup-off");
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      popup.classList.add("popup-off");
+      popup.classList.remove("popup-error");
+    }
+  })
 
   if (storage) {
     name1name2.value = storage;
@@ -33,16 +40,6 @@ popupclose.addEventListener("click", function(evt) {
   popup.classList.remove("popup-error");
 });
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (popup.classList.contains("popup-off")) {
-      evt.preventDefault();
-      popup.classList.add("popup-off");
-      popup.classList.remove("popup-error");
-    }
-  }
-});
-
 form.addEventListener("submit", function(evt) {
   if (!name1name2.value || !email.value || !comment.value) {
     evt.preventDefault();
@@ -51,4 +48,24 @@ form.addEventListener("submit", function(evt) {
   } else {
     localStorage.setItem("name", name1name2.value);
   }
-})
+});
+
+var linkmap = document.querySelector(".contacts-section__img");
+var map = document.querySelector(".popup-map-off");
+var mapclose = document.querySelector(".map__close");
+
+linkmap.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  map.classList.remove("popup-map-off");
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      map.classList.add("popup-map-off");
+    }
+  })
+});
+
+mapclose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  map.classList.add("popup-map-off");
+});
