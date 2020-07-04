@@ -946,12 +946,19 @@ input.search-form__input::placeholder {
   margin-bottom: 19px;
 }
 
-.widget-promo {
+.widget-promo-perfo {
   grid-column: 1 / 3;
   grid-row: 2 / 4;
   color: var(--basic-white);
-  background-color: rgba(255, 255, 255, 0.3);
   background-image: url(../img/men-perforator.jpg);
+  position: relative;
+}
+
+.widget-promo-drill {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+  color: var(--basic-white);
+  background-image: url(../img/men-drel.jpg);
   position: relative;
 }
 
@@ -990,13 +997,19 @@ input.search-form__input::placeholder {
 .hidden {
   display: none;
 }
+/*
+.promo-drill {
+  width: 620px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
 
 .promo-perforator {
   width: 620px;
   background-color: rgba(0, 0, 0, 0.25);
 }
-
-.promo-perforator__h3 {
+*/
+.promo-perforator__h3,
+.promo-drill__h3 {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
@@ -1005,9 +1018,12 @@ input.search-form__input::placeholder {
   margin: 0px;
   padding-top: 23px;
   padding-left: 24px;
+  padding-right: 100px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
-.promo-perforator__caption {
+.promo-perforator__caption,
+.promo-drill__caption {
   font-size: 18px;
   line-height: 24px;
   font-style: normal;
@@ -1017,25 +1033,7 @@ input.search-form__input::placeholder {
   padding-bottom: 15px;
   padding-left: 24px;
   margin-bottom: 105px;
-}
-
-.promo-drill {
-  position: absolute;
-  background-color: var(--basic-black);
-  opacity: 0.25;
-}
-
-.promo-drill__h3 {
-  padding: 10px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 36px;
-  text-transform: uppercase;
-}
-
-.promo-drill__caption {
-  font-size: 18px;
-  line-height: 24px;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 .widget-promo__link {
@@ -1545,6 +1543,44 @@ input.search-form__input::placeholder {
   margin-top: 25px;
 }
 
+.guarantee-wrap {
+  text-align: left;
+  position: relative;
+}
+
+.guarantee-wrap::after {
+  content: "";
+  width: 389px;
+  height: 283px;
+  position: absolute;
+  background-image: url(../img/medal.png);
+  background-repeat: no-repeat;
+  top: -2px;
+  right: -8px;
+}
+
+.guarantee-wrap__h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 24px;
+  padding: 0;
+  margin: 0;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: var(--basic-blue);
+}
+
+.guarantee-wrap__desc {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 25px;
+  width: 316px;
+}
+
 .section-h2 {
   font-size: 30px;
   line-height: 30px;
@@ -1611,9 +1647,8 @@ input.search-form__input::placeholder {
   color: inherit;
 }
 
-.services-section-item__button1 {
-  background-color: var(--basic-white);
-  color: var(--basic-blue);
+.section-hidden {
+  display: none;
 }
 
 .services-section-item__button1 {
@@ -1637,6 +1672,16 @@ input.search-form__input::placeholder {
   padding-left: 22px;
 }
 
+.button-active {
+  color: var(--basic-blue);
+  background-color: var(--basic-white);
+}
+
+.button-active:hover {
+  color: var(--basic-white);
+  background-color: var(--basic-dark-blue);
+}
+
 .delivery-wrap {
   position: relative;
 }
@@ -1647,6 +1692,7 @@ input.search-form__input::placeholder {
   height: 261px;
   position: absolute;
   background-image: url(../img/car.png);
+  background-repeat: no-repeat;
   top: 21px;
   right: 1px;
 }
@@ -1668,36 +1714,58 @@ input.search-form__input::placeholder {
   margin-top: 29px;
 }
 
-.guarantee-wrap__h3 {
-  font-size: 36px;
-  line-height: 24px;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: var(--basic-blue);
+.credit-wrap {
+  position: relative;
+}
+
+.credit-wrap::after {
+  content: "";
+  width: 465px;
+  height: 285px;
+  position: absolute;
+  background-image: url(../img/credit.png);
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 165px;
 }
 
 .credit-wrap__h3 {
   font-size: 36px;
-  line-height: 24px;
+  line-height: 25px;
   font-weight: normal;
   text-transform: uppercase;
   color: var(--basic-blue);
+  margin: 0;
+  margin-top: 31px;
+  margin-bottom: 33px;
+  padding: 0;
 }
 
 .credit-wrap__desc {
   font-family: "PT Sans", sans-serif;
-  background-image: url("../img/credit.png");
-  background-repeat: no-repeat;
-  background-position: right;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  width: 280px;
+  margin-bottom: 35px;
 }
 
 .credit-wrap__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   background-color: var(--color-red-button);
   border-radius: 2px;
   color: var(--basic-white);
+  padding-top: 10px;
+  padding-right: 44px;
+  padding-bottom: 11px;
+  padding-left: 45px;
 }
 
 .about-company-section {
@@ -2753,7 +2821,8 @@ input.search-form__input::placeholder {
 .manufacture-section__link:hover,
 .about-company-section__link:hover,
 .contacts-section__link:hover,
-.popup__submit:hover {
+.popup__submit:hover,
+.credit-wrap__link:hover {
   background-color: var(--color-hover-button);
 }
 
@@ -2762,7 +2831,8 @@ input.search-form__input::placeholder {
 .manufacture-section__link:active,
 .about-company-section__link:active,
 .contacts-section__link:active,
-.popup__submit:active {
+.popup__submit:active,
+.credit-wrap__link:active {
   background-color: var(--color-active-red);
 }
 
@@ -2907,6 +2977,11 @@ input.search-form__input::placeholder {
 .services-section-item__button1:active,
 .services-section-item__button2:active,
 .services-section-item__button3:active {
+  color: var(--basic-blue);
+  background-color: var(--basic-white);
+}
+
+.services-section-item__button {
   color: var(--basic-blue);
   background-color: var(--basic-white);
 }
@@ -3259,7 +3334,7 @@ input.search-form__input::placeholder {
 }
 
 .popup-map-on {
-  position: absolute;
+  position: fixed;
   top: 2375px;
   left: 168px;
   display: block;
@@ -3282,4 +3357,8 @@ input.search-form__input::placeholder {
   position: absolute;
   top: 45px;
   right: 8px;
+}
+
+.promo-none {
+  display: none;
 }
