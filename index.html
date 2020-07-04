@@ -107,8 +107,8 @@
               <button class="widget-promo__slide-previous" type="button" aria-label="Предыдущий слайд"><span class="hidden">Предыдущий слайд</span></button>
               <button class="widget-promo__slide-next" type="button" aria-label="Следующий слайд"><span class="hidden">Следующий слайд</span></button>
             </div>
-            <button class="widget-promo-radio1" type="button" aria-label="Первый слайд"><span class="hidden">Первый слайд</span></button>
-            <button class="widget-promo-radio2" type="button" aria-label="Второй слайд"><span class="hidden">Второй слайд</span></button>
+            <button class="widget-promo-radio1-on widget-promo-radio1" type="button" aria-label="Первый слайд"><span class="hidden">Первый слайд</span></button>
+            <button class="widget-promo-radio2-off widget-promo-radio2" type="button" aria-label="Второй слайд"><span class="hidden">Второй слайд</span></button>
             <a class="widget-promo__link" href="catalog.html" aria-label="Открыть каталог товаров">Открыть каталог</a>
           </div>
         </div>
@@ -183,6 +183,17 @@
             </li>
           </ul>
         </div>
+
+        <article class="popup-basket popup-basket-off"> 
+          <button class="popup-basket__close" type="button" aria-label="Закрыть окно"><svg class="popup__svg" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z"/></svg></button>
+          <h3 class="visually-hidden">Окно добавления товара в корзину</h3>
+          <p class="popup-basket__p">Товар добавлен в корзину!</p>
+          <div class="popup-basket__button">
+            <a class="popup-basket-a" aria-label="Оформить заказ" tabindex="0">Оформить заказ</a>
+            <button class="popup-basket-button" aria-label="Продолжить покупки">Продолжить покупки</button>
+          </div>
+        </article>
+
       </section>
 
       <section class="manufacture-section">
@@ -456,10 +467,3 @@
   <script src="js/popup.js"></script>
 
 </html>
-
-<!--
-<div>
-  <button type="button"><img src="img/icon-close.svg" alt="Закрыть карту"></button>
-  <img src="img/big-map.png" alt="Большая карта с расположением магазина">
-</div>
--->

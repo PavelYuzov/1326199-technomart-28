@@ -38,6 +38,7 @@
   --color-filter-background: #948a78;
   --color-hover-button: #CA2C37;
   --color-popup-ground: #F4F4F4;
+  --color-popup-ground-basket: #F1F1F1;
 
   --body-font-size: 13px;
   --body-line-height: 24px;
@@ -1050,16 +1051,42 @@ input.search-form__input::placeholder {
   margin-left: 24px;
 }
 
-.widget-promo-radio1{
+.widget-promo-radio1-on {
   content: "";
   width: 10px;
   height: 10px;
   position: absolute;
-  background-image: url(../img/promo-radio-0ff.png);
+  background-image: url(../img/promo-radio-on.png);
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
   left: 295px;
+  bottom: 36px;
+}
+
+.widget-promo-radio1 {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-image: url(../img/promo-radio-off.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  left: 295px;
+  bottom: 36px;
+}
+
+.widget-promo-radio2-off {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background-image: url(../img/promo-radio-off.png);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  left: 315px;
   bottom: 36px;
 }
 
@@ -1082,6 +1109,7 @@ input.search-form__input::placeholder {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-white);
+  position: relative;
 }
 
 .container-product-section__wrap {
@@ -2822,7 +2850,8 @@ input.search-form__input::placeholder {
 .about-company-section__link:hover,
 .contacts-section__link:hover,
 .popup__submit:hover,
-.credit-wrap__link:hover {
+.credit-wrap__link:hover,
+.popup-basket-a:hover {
   background-color: var(--color-hover-button);
 }
 
@@ -2832,7 +2861,8 @@ input.search-form__input::placeholder {
 .about-company-section__link:active,
 .contacts-section__link:active,
 .popup__submit:active,
-.credit-wrap__link:active {
+.credit-wrap__link:active,
+.popup-basket-a:active {
   background-color: var(--color-active-red);
 }
 
@@ -3334,7 +3364,7 @@ input.search-form__input::placeholder {
 }
 
 .popup-map-on {
-  position: fixed;
+  position: absolute;
   top: 2375px;
   left: 168px;
   display: block;
@@ -3350,6 +3380,17 @@ input.search-form__input::placeholder {
   position: relative;
 }
 
+.container-map::after {
+  content: "";
+  width: 943px;
+  height: 7px;
+  position: absolute;
+  background-image: url(../img/line-map.png);
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 0px;
+}
+
 .map__close {
   list-style: none;
   border: none;
@@ -3360,5 +3401,100 @@ input.search-form__input::placeholder {
 }
 
 .promo-none {
+  display: none;
+}
+
+.popup-basket {
+  text-align: center;
+  width: 620px;
+  background-color: var(--basic-white);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 125px;
+  left: 330px;
+  animation: bounce 0.5s;
+}
+
+.popup-basket::before {
+  content: "";
+  width: 620px;
+  height: 7px;
+  position: absolute;
+  background-image: url(../img/line-popup.png);
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 0px;
+}
+
+.popup-basket__p {
+  color: var(--basic-black);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 73px;
+  margin-bottom: 67px;
+  position: relative;
+}
+
+.popup-basket__p::before {
+  content: "";
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  background-image: url(../img/icon-mark.svg);
+  background-repeat: no-repeat;
+  top: -20px;
+  left: 90px;
+}
+
+.popup-basket__button {
+  background-color: var(--color-popup-ground-basket);
+}
+
+.popup-basket-a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  padding-top: 11px;
+  padding-right: 46px;
+  padding-bottom: 9px;
+  padding-left: 47px;
+  margin-right: 10px;
+}
+
+.popup-basket-button {
+  list-style: none;
+  border: none;
+  background-color: var(--basic-white);
+  text-transform: uppercase;
+  padding-top: 11px;
+  padding-right: 31px;
+  padding-bottom: 9px;
+  padding-left: 32px;
+  margin-top: 37px;
+  margin-bottom: 37px;
+}
+
+.popup-basket__close {
+  list-style: none;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.popup-basket__line {
+  content: "";
+  position: absolute;
+  top: -9px;
+}
+
+.popup-basket-off {
   display: none;
 }
