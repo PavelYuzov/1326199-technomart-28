@@ -3,11 +3,13 @@ var popup = document.querySelector(".popup-off");
 var popupclose = document.querySelector(".popup__close");
 var name1name2 = document.querySelector(".name1-name2");
 var form = document.querySelector(".popup-on__form");
+var buttonpopup = document.querySelector(".popup__button");
 var email = document.querySelector(".email-js");
 var comment = document.querySelector(".input-area1");
 var linkmap = document.querySelector(".contacts-section__img");
 var map = document.querySelector(".popup-map-off");
 var mapclose = document.querySelector(".map__close");
+var error = document.querySelector(".popup-error");
 var buttonactive = document.querySelector(".button-active");
 var button1 = document.querySelector(".services-section-item__button1");
 var button2 = document.querySelector(".services-section-item__button2");
@@ -42,7 +44,7 @@ try{
 }
 
 link.addEventListener("click", function(evt) {
-  evt.preventDefault();
+  evt.preventDefault(evt);
   popup.classList.remove("popup-off");
   window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
@@ -67,10 +69,11 @@ popupclose.addEventListener("click", function(evt) {
 });
 
 form.addEventListener("submit", function(evt) {
-  if (!name1name2.value || !email.value || !comment.value) {
+  if (!name1name2.value || !email.value) {
     evt.preventDefault();
+    popup.classList.remove("popup-error");
     popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("popup-error")
+    popup.classList.add("modal-error");
   } else {
     localStorage.setItem("name", name1name2.value);
   }
@@ -83,6 +86,7 @@ linkmap.addEventListener("click", function(evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       map.classList.add("popup-map-off");
+      popup.classList.remove("popup-error");
     }
   })
 });
