@@ -2,10 +2,10 @@ var link = document.querySelector(".contacts-section__link");
 var popup = document.querySelector(".popup-off");
 var popupclose = document.querySelector(".popup__close");
 var name1name2 = document.querySelector(".name1-name2");
-var form = document.querySelector(".popup-on__form");
+var form = document.querySelector(".popup-on");
 var buttonpopup = document.querySelector(".popup__button");
 var email = document.querySelector(".email-js");
-var comment = document.querySelector(".input-area1");
+var comment = document.querySelector(".textArea");
 var linkmap = document.querySelector(".contacts-section__img");
 var map = document.querySelector(".popup-map-off");
 var mapclose = document.querySelector(".map__close");
@@ -69,11 +69,12 @@ popupclose.addEventListener("click", function(evt) {
 });
 
 form.addEventListener("submit", function(evt) {
-  if (!name1name2.value || !email.value) {
+  if (!name1name2.value || !email.value || !comment.value) {
     evt.preventDefault();
+    popup.classList.remove("popup-off");
     popup.classList.remove("popup-error");
     popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("modal-error");
+    popup.classList.add("popup-error");
   } else {
     localStorage.setItem("name", name1name2.value);
   }
