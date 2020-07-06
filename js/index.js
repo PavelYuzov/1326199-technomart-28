@@ -33,6 +33,12 @@ var popupbasketoff = document.querySelector(".popup-basket-off");
 var popupbasketclose = document.querySelector(".popup-basket__close");
 var popupbasketbutton = document.querySelector(".popup-basket-button2");
 var buttonbasket = document.querySelectorAll(".product-card-choice__link");
+var basketplus = document.querySelectorAll(".product-card-choice__link");
+var bookmarksplus = document.querySelectorAll(".product-card-choice__button");
+var activebasket = document.querySelector(".header-basket-active");
+var activebookmarks = document.querySelector(".header-bookmarks-active");
+var headerbookmarks = document.querySelector(".header-bookmarks");
+var headerbasket = document.querySelector(".header-basket");
 
 var isStorageSupport = true;
 var storage = "";
@@ -192,3 +198,17 @@ popupbasketbutton.addEventListener("click", function(evt) {
   evt.preventDefault();
   popupbasketoff.classList.add("popup-basket-off");
 });
+
+for (var i = 0; i < basketplus.length; i++) {
+  basketplus[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
+    headerbasket.classList.add("header-basket-active");
+  });
+}
+
+for (var i = 0; i < bookmarksplus.length; i++) {
+  bookmarksplus[i].addEventListener("click", function(evt) {
+    evt.preventDefault();
+    headerbookmarks.classList.add("header-bookmarks-active");
+  });
+}
